@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Our Programs — Homabay LBQ Network health, legal, economic, and community programs.">
+    <title>Programs — HOMABAY LBQ NETWORK</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+    <style>
+        .program-detail {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 3rem;
+            align-items: start;
+            padding: 3rem 0;
+            border-bottom: 1px solid var(--color-gray);
+        }
+        .program-detail:last-child { border-bottom: none; }
+        .program-detail-icon {
+            width: 100px;
+            height: 100px;
+            background: var(--color-gray);
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5rem;
+            transition: var(--transition);
+        }
+        .program-detail:hover .program-detail-icon {
+            background: var(--color-primary);
+            transform: scale(1.05);
+        }
+        .program-detail-title { font-size: 1.5rem; margin-bottom: 0.75rem; }
+        .program-detail-text { color: var(--color-dark-gray); line-height: 1.8; margin-bottom: 1rem; }
+        .program-tags { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-top: 1rem; }
+        .tag {
+            background: var(--color-gray);
+            padding: 0.25rem 0.75rem;
+            font-size: 0.8rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--color-dark-gray);
+        }
+        @media (max-width: 768px) {
+            .program-detail { grid-template-columns: 1fr; gap: 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+        <div class="nav-container">
+            <a href="../index.html" class="logo" aria-label="Homabay LBQ Network Home">
+                <div class="logo-icon" aria-hidden="true">H</div>
+                <span class="logo-text">HOMABAY LBQ NETWORK</span>
+            </a>
+            <ul class="nav-links" id="navLinks" role="list">
+                <li><a href="../index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="programs.html" class="nav-link">Programs</a></li>
+                <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                <li><a href="news.html" class="nav-link">News</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle mobile menu" aria-expanded="false">☰</button>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <h1 class="page-title">Our Programs</h1>
+            <nav class="page-breadcrumb" aria-label="Breadcrumb">
+                <a href="../index.html">Home</a>
+                <span aria-hidden="true">/</span>
+                <span>Programs</span>
+            </nav>
+        </div>
+    </header>
+
+    <section class="section">
+        <div class="container">
+            <div class="text-center" style="margin-bottom: 1rem;">
+                <div class="section-subtitle">Holistic Support</div>
+                <h2 class="section-title">Programs Designed by Women, for Women</h2>
+                <p style="color: var(--color-dark-gray); max-width: 600px; margin: 0 auto; line-height: 1.8;">
+                    Every program we run is shaped by the priorities of LBQ women in Homabay County. We take an integrated approach — recognising that health, safety, legal protection, and economic security are inseparable.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-gray">
+        <div class="container">
+            <div class="program-detail reveal">
+                <div class="program-detail-icon" aria-hidden="true">⚕️</div>
+                <div>
+                    <h2 class="program-detail-title">Health &amp; Wellness</h2>
+                    <p class="program-detail-text">We provide accessible, confidential, and LBQ-affirming healthcare services — from sexual reproductive health education to mental health peer counselling and referral networks. Our health team partners with local clinics to train providers in culturally sensitive care.</p>
+                    <p class="program-detail-text">Key activities include free health camps, psychosocial support groups, mental health first aid training, and awareness campaigns on SRHR rights.</p>
+                    <div class="program-tags">
+                        <span class="tag">Mental Health</span>
+                        <span class="tag">SRHR</span>
+                        <span class="tag">Peer Counselling</span>
+                        <span class="tag">Health Camps</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="program-detail reveal">
+                <div class="program-detail-icon" aria-hidden="true">⚖️</div>
+                <div>
+                    <h2 class="program-detail-title">Legal Aid &amp; Advocacy</h2>
+                    <p class="program-detail-text">Our legal team provides direct legal assistance to LBQ women facing discrimination, violence, or violations of their human rights. We also conduct policy advocacy at the county and national level to push for legislative change.</p>
+                    <p class="program-detail-text">We have supported over 150 cases including employment discrimination, housing eviction, family violence, and access to justice matters.</p>
+                    <div class="program-tags">
+                        <span class="tag">Legal Assistance</span>
+                        <span class="tag">Policy Advocacy</span>
+                        <span class="tag">Human Rights</span>
+                        <span class="tag">Court Support</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="program-detail reveal">
+                <div class="program-detail-icon" aria-hidden="true">💼</div>
+                <div>
+                    <h2 class="program-detail-title">Economic Empowerment</h2>
+                    <p class="program-detail-text">Financial independence is a cornerstone of safety and dignity. Our economic empowerment program delivers vocational training, business skills workshops, savings group facilitation, and microfinance linkages for LBQ women.</p>
+                    <p class="program-detail-text">We have helped over 400 women start or grow small businesses, with a focus on sustainable, locally-rooted enterprise.</p>
+                    <div class="program-tags">
+                        <span class="tag">Business Training</span>
+                        <span class="tag">Microfinance</span>
+                        <span class="tag">Savings Groups</span>
+                        <span class="tag">Vocational Skills</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="program-detail reveal">
+                <div class="program-detail-icon" aria-hidden="true">📚</div>
+                <div>
+                    <h2 class="program-detail-title">Education &amp; Awareness</h2>
+                    <p class="program-detail-text">Changing hearts and minds requires sustained community education. We run sensitisation programs in schools, religious institutions, and community spaces — creating dialogue around LBQ rights and reducing stigma.</p>
+                    <p class="program-detail-text">Our community educators are trained LBQ women who can speak authentically to their experiences and build bridges with allies.</p>
+                    <div class="program-tags">
+                        <span class="tag">School Programs</span>
+                        <span class="tag">Community Sensitisation</span>
+                        <span class="tag">Ally Building</span>
+                        <span class="tag">Media Campaigns</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="program-detail reveal">
+                <div class="program-detail-icon" aria-hidden="true">🛡️</div>
+                <div>
+                    <h2 class="program-detail-title">Safety &amp; Protection</h2>
+                    <p class="program-detail-text">LBQ women facing violence, displacement, or housing insecurity receive emergency support through our protection program. We maintain a network of safe houses and provide crisis counselling, legal referrals, and relocation support.</p>
+                    <p class="program-detail-text">We also run a 24/7 emergency hotline for women in crisis situations who need immediate assistance.</p>
+                    <div class="program-tags">
+                        <span class="tag">Safe Housing</span>
+                        <span class="tag">Crisis Intervention</span>
+                        <span class="tag">Emergency Hotline</span>
+                        <span class="tag">Relocation Support</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="program-detail reveal">
+                <div class="program-detail-icon" aria-hidden="true">🤝</div>
+                <div>
+                    <h2 class="program-detail-title">Community Building</h2>
+                    <p class="program-detail-text">Isolation is one of the greatest challenges facing LBQ women in Homabay. Our community building program creates regular safe spaces — both physical and digital — where women can connect, share, heal, and organise together.</p>
+                    <p class="program-detail-text">Monthly social events, annual retreats, and an active online community ensure that no LBQ woman in Homabay has to navigate life alone.</p>
+                    <div class="program-tags">
+                        <span class="tag">Safe Spaces</span>
+                        <span class="tag">Support Groups</span>
+                        <span class="tag">Social Events</span>
+                        <span class="tag">Online Community</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-banner">
+        <div class="container">
+            <h2 class="cta-title">Partner With Us</h2>
+            <p class="cta-text">We welcome partnerships with organisations that share our commitment to LBQ rights, dignity, and justice in Homabay County.</p>
+            <a href="contact.html" class="btn btn-white">Get in Touch</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="footer-logo">HOMABAY LBQ NETWORK</div>
+                    <p class="footer-desc">Advancing the rights, health, and dignity of Lesbian, Bisexual, and Queer women in Homabay County through community-led action.</p>
+                </div>
+                <div>
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="programs.html">Programs</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="news.html">News</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-title">Programs</h4>
+                    <ul class="footer-links">
+                        <li><a href="programs.html">Health &amp; Wellness</a></li>
+                        <li><a href="programs.html">Legal Aid</a></li>
+                        <li><a href="programs.html">Economic Empowerment</a></li>
+                        <li><a href="programs.html">Education</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-title">Connect</h4>
+                    <ul class="footer-links">
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="contact.html">Donate</a></li>
+                        <li><a href="contact.html">Volunteer</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-copy">© 2026 HOMABAY LBQ NETWORK. All rights reserved.</p>
+                <div class="footer-social" aria-label="Social media links">
+                    <a href="#" class="social-link" aria-label="Facebook">f</a>
+                    <a href="#" class="social-link" aria-label="Twitter">t</a>
+                    <a href="#" class="social-link" aria-label="LinkedIn">in</a>
+                    <a href="#" class="social-link" aria-label="Instagram">ig</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

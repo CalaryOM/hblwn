@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Homabay LBQ Network — reach out, donate, or volunteer.">
+    <title>Contact Us — HOMABAY LBQ NETWORK</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+    <style>
+        .donate-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        .donate-card {
+            background: var(--color-white);
+            border: 2px solid var(--color-gray);
+            padding: 2rem;
+            text-align: center;
+            transition: var(--transition);
+        }
+        .donate-card:hover {
+            border-color: var(--color-primary);
+            transform: translateY(-4px);
+            box-shadow: 0 12px 30px rgba(0,0,0,0.1);
+        }
+        .donate-amount {
+            font-family: var(--font-display);
+            font-size: 2rem;
+            font-weight: 800;
+            color: var(--color-primary);
+            margin-bottom: 0.5rem;
+        }
+        .donate-impact {
+            color: var(--color-dark-gray);
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+        }
+        @media (max-width: 768px) { .donate-grid { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+        <div class="nav-container">
+            <a href="../index.html" class="logo" aria-label="Homabay LBQ Network Home">
+                <div class="logo-icon" aria-hidden="true">H</div>
+                <span class="logo-text">HOMABAY LBQ NETWORK</span>
+            </a>
+            <ul class="nav-links" id="navLinks" role="list">
+                <li><a href="../index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="programs.html" class="nav-link">Programs</a></li>
+                <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                <li><a href="news.html" class="nav-link">News</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle mobile menu" aria-expanded="false">☰</button>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <h1 class="page-title">Contact Us</h1>
+            <nav class="page-breadcrumb" aria-label="Breadcrumb">
+                <a href="../index.html">Home</a>
+                <span aria-hidden="true">/</span>
+                <span>Contact</span>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ── Contact Section ── -->
+    <section class="section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info reveal">
+                    <div class="section-subtitle">Reach Out</div>
+                    <h2 class="section-title">We'd Love to Hear From You</h2>
+                    <p style="color: var(--color-dark-gray); margin-bottom: 2rem; line-height: 1.8;">
+                        Whether you need support, want to volunteer, partner with us, or simply learn more about our work — don't hesitate to get in touch.
+                    </p>
+                    <div class="contact-item">
+                        <div class="contact-icon" aria-hidden="true">📍</div>
+                        <div class="contact-details">
+                            <h4>Location</h4>
+                            <p>Homabay Town, Homabay County<br>Kenya</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon" aria-hidden="true">📞</div>
+                        <div class="contact-details">
+                            <h4>Phone</h4>
+                            <p><a href="tel:+254712345678" style="color:inherit;text-decoration:none;">+254 712 345 678</a><br>
+                            <a href="tel:+254723456789" style="color:inherit;text-decoration:none;">+254 723 456 789</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon" aria-hidden="true">✉️</div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p><a href="mailto:info@homabaylbq.org" style="color:inherit;text-decoration:none;">info@homabaylbq.org</a><br>
+                            <a href="mailto:programs@homabaylbq.org" style="color:inherit;text-decoration:none;">programs@homabaylbq.org</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon" aria-hidden="true">🌐</div>
+                        <div class="contact-details">
+                            <h4>Social Media</h4>
+                            <p>@HomabayLBQ on all platforms</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon" aria-hidden="true">🆘</div>
+                        <div class="contact-details">
+                            <h4>Emergency Hotline (24/7)</h4>
+                            <p><a href="tel:+254700111222" style="color: var(--color-accent); font-weight:600; text-decoration:none;">+254 700 111 222</a><br>
+                            <span style="font-size:0.875rem;">For LBQ women in crisis</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form reveal">
+                    <form id="contactForm" novalidate>
+                        <div class="form-group">
+                            <label class="form-label" for="name">Full Name *</label>
+                            <input id="name" type="text" class="form-input" placeholder="Your name" required autocomplete="name">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="email">Email Address *</label>
+                            <input id="email" type="email" class="form-input" placeholder="your@email.com" required autocomplete="email">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="subject">Subject</label>
+                            <input id="subject" type="text" class="form-input" placeholder="How can we help?">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="message">Message *</label>
+                            <textarea id="message" class="form-input" placeholder="Tell us more…" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+                        <div id="formSuccess" class="form-success" role="alert">
+                            ✓ Thank you! Your message has been sent. We will get back to you shortly.
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── Donate ── -->
+    <section class="section section-gray" id="donate">
+        <div class="container">
+            <div class="text-center" style="margin-bottom: 1rem;">
+                <div class="section-subtitle">Make a Difference</div>
+                <h2 class="section-title">Support Our Work</h2>
+                <p style="color: var(--color-dark-gray); max-width: 600px; margin: 0 auto; line-height: 1.8;">
+                    Your donation directly funds programs for LBQ women in Homabay County. Every contribution counts.
+                </p>
+            </div>
+            <div class="donate-grid">
+                <div class="donate-card reveal">
+                    <div class="donate-amount">KES 1,000</div>
+                    <p class="donate-impact">Provides a peer counselling session for one woman in need.</p>
+                    <a href="mailto:info@homabaylbq.org?subject=Donation%20KES%201000" class="btn btn-primary">Donate Now</a>
+                </div>
+                <div class="donate-card reveal">
+                    <div class="donate-amount">KES 5,000</div>
+                    <p class="donate-impact">Covers legal aid costs for one case consultation.</p>
+                    <a href="mailto:info@homabaylbq.org?subject=Donation%20KES%205000" class="btn btn-primary">Donate Now</a>
+                </div>
+                <div class="donate-card reveal">
+                    <div class="donate-amount">KES 10,000</div>
+                    <p class="donate-impact">Funds one month of safe housing for a woman in crisis.</p>
+                    <a href="mailto:info@homabaylbq.org?subject=Donation%20KES%2010000" class="btn btn-primary">Donate Now</a>
+                </div>
+            </div>
+            <p style="text-align:center; margin-top:2rem; color: var(--color-dark-gray); font-size:0.9rem;">
+                For other donation amounts or bank transfer details, email <a href="mailto:info@homabaylbq.org" style="color: var(--color-primary); font-weight: 600;">info@homabaylbq.org</a>
+            </p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="footer-logo">HOMABAY LBQ NETWORK</div>
+                    <p class="footer-desc">Advancing the rights, health, and dignity of Lesbian, Bisexual, and Queer women in Homabay County through community-led action.</p>
+                </div>
+                <div>
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="programs.html">Programs</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="news.html">News</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-title">Programs</h4>
+                    <ul class="footer-links">
+                        <li><a href="programs.html">Health &amp; Wellness</a></li>
+                        <li><a href="programs.html">Legal Aid</a></li>
+                        <li><a href="programs.html">Economic Empowerment</a></li>
+                        <li><a href="programs.html">Education</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-title">Connect</h4>
+                    <ul class="footer-links">
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="contact.html">Donate</a></li>
+                        <li><a href="contact.html">Volunteer</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-copy">© 2026 HOMABAY LBQ NETWORK. All rights reserved.</p>
+                <div class="footer-social" aria-label="Social media links">
+                    <a href="#" class="social-link" aria-label="Facebook">f</a>
+                    <a href="#" class="social-link" aria-label="Twitter">t</a>
+                    <a href="#" class="social-link" aria-label="LinkedIn">in</a>
+                    <a href="#" class="social-link" aria-label="Instagram">ig</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
