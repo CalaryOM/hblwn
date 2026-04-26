@@ -27,24 +27,6 @@ homabay_lbq_network/
 
 ## Improvements Made
 
-- Split into separate pages (Home, About, Programs, Gallery, News, Contact)
-- Separated CSS and JS into their own files for easy editing
-- Added full `aria-*` accessibility attributes throughout
-- Improved form: uses proper `<label for>` + `id` pairs, shows success message inline (no alert popup)
-- Added 24/7 emergency hotline to contact page
-- Added news category tags and "Read More" links
-- Added donate section with KES-denominated tiers
-- Improved gallery: each item now shows a label on hover
-- Improved lightbox: round buttons with hover states
-- Improved footer: link hover now also shifts slightly right for a nice effect
-- Added `--shadow-sm/md/lg` design tokens for consistent elevation
-- Added hero bottom border accent strip
-- Counter animation now strips non-numeric characters properly
-- Mobile menu now sets `aria-expanded` correctly
-
-## To Deploy
-
-Upload the entire folder to any web host. No server-side code is needed — it's a pure HTML/CSS/JS static site.
 
 ## Adding Real Photos
 
